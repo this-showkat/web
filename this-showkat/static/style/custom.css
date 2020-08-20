@@ -1,0 +1,43 @@
+.nav-link-icon{
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.contact-items div{
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 992px ){
+  .navbar-brand{
+    box-shadow: 2px 2px 5px #fff;
+    padding-left: 15px;
+  }
+  .navbar{
+    background-color: red !important;
+    background-image: url("../img/menu_bg.jpg");
+    height: 100px;
+  }
+  .navbar-nav li {
+    margin-right: 5px;
+  }
+  .nav-item{
+    width: 120px;
+  }
+  .nav-link{
+    background-image: linear-gradient(#aaa, #fff);
+    border-radius: 5px;
+    
+  }
+  .nav-link:hover{
+    background-image: linear-gradient(#fff, #aaa);
+    box-shadow: 2px 2px 3px #aaa;
+    border-radius: 5px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px ){
+
+
+  .nav-item{
+    width: 150px;
+  }
+}

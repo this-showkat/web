@@ -1,0 +1,84 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="static/style/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="static/style/slick/slick-theme.css"/>
+  </head>
+  <body>
+      <style>
+          .slider-for div{
+              background-color: #888;
+              text-align: center;
+              height: 500px;
+          }
+          .slider-for div h3{
+              margin:auto;
+          }
+         
+      </style>
+
+    <div class="slider slider-for">
+        <div class="">
+            <h3>1</h3>
+        </div>
+        <div>
+            <h3>2</h3>
+        </div>
+        <div>
+            <h3>3</h3>
+        </div>
+        <div>
+            <h3>4</h3>
+        </div>
+        <div>
+            <h3>5</h3>
+        </div>
+    </div>
+    <style>
+ 
+    </style>
+    <div class="slider slider-nav">
+        <div>
+            <h3>gfhgfhgfh1</h3>
+        </div>
+        <div>
+            <h3>gfhfghfghfg2</h3>
+        </div>
+        <div>
+            <h3>ghgfhfgh3</h3>
+        </div>
+        <div>
+            <h3>4fghfghgf</h3>
+        </div>
+        <div>
+            <h3>5fghgfhf</h3>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/script/jquery/jquery-3.5.1.js">
+
+//  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script type="text/javascript" src="static/script/slick/slick.js"></script>
+
+  <script type="text/javascript">
+    
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+  </script>
+
+  </body>
+</html>
